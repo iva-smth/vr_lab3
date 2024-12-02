@@ -10,11 +10,12 @@ public class BallController : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
     }
-    private void OnCollisionStay(Collision collision)
+
+    private void OnCollisionStay(UnityEngine.Collision collision)
     {
-        if (collision.gameObject.tag == "Out" || collision.gameObject.tag == "Pin" )
+        if (collision.gameObject.tag == "Out" || collision.gameObject.tag == "Pin")
         {
-            Invoke("DestroyBall", 5);   
+            Invoke("DestroyBall", 5);
         }
     }
 

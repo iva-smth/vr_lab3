@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text FrameText;
     [SerializeField] TMP_Text ThrowText;
     [SerializeField] TMP_Text StrikeText;
-    [SerializeField] TMP_Text TotalScoreText;
+
     [SerializeField] GameObject Panel;
 
     // Start is called before the first frame update
@@ -82,21 +82,6 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         Panel.SetActive(true);
-        TotalScoreText.text = "־בשטי סקוע: " + GameScore.ToString();
-        Time.timeScale = 0;
-        Debug.Log("game end");
-    }
-
-    public void RestartGame()
-    {
-        Panel.SetActive(false);
-        GameScore = 0;
-        Frame = 0;
-        Time.timeScale = 1;
-
-        FrameText.text = "װנויל: " + (Frame / 2 + 1).ToString();
-        ScoreText.text = "ׁקוע: " + GameScore.ToString();
-        NewFrame();
     }
 
     void ShowText()

@@ -9,12 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 66c4c4df7485e61478db3c4aaf481609
+  - enabled: 1
     path: Assets/Scenes/Bowling.unity
     guid: 59e6f74a31c98ef47998b6ff193e56a3
+  - enabled: 1
+    path: Assets/Scenes/Rooms.unity
+    guid: 3acfbfba5ac67384ca05f6a140ff71a7
+  - enabled: 1
+    path: Assets/Scenes/Lab 5.unity
+    guid: e889dc5d199d2e24685c24891ab40607
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e19c4fe106adbb84e8c5e65aa34c6c19,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 74342c01f6542a146aea8f0802e4233d,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8788a959180244f4587e7663e6a9b0d6,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 532409c6a274c4e4caa68e925eaeffe9,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 09889b9c9d8a7ed46bc15864d5fd793f,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c0bd0841dfb81f949b48f262c4d76bf3,
       type: 2}
