@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using static UnityEngine.EventSystems.EventTrigger;
+using System.Net.Sockets;
 
 public class ScoreKeeper : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class ScoreKeeper : MonoBehaviour
     public TMP_Text timer;
     public bool complete = false;
     public bool pause = true;
+    public List<GameObject> sockets = new List<GameObject>();
     public GameObject keyboard;
     public static ScoreKeeper Instance { get; private set; }
 
@@ -27,9 +29,21 @@ public class ScoreKeeper : MonoBehaviour
     {
         if (!complete && !pause)
         {
+            
             playerTime += Time.deltaTime;
             UpdateTimer();
-        }        
+        }
+        foreach(GameObject socket in sockets)
+        {
+            if (pause || !socket.GetComponent<SlotsBehavior>().detail.GetComponent<DetailBehaviour>().isInHand)
+            {
+                socket.GetComponent<BoxCollider>().enabled = false;
+            }
+            if (!pause && socket.GetComponent<SlotsBehavior>().detail.GetComponent<DetailBehaviour>().isInHand)
+            {
+                socket.GetComponent<BoxCollider>().enabled = true;
+            }
+        }
     }
 
     public void UpdateTimer()

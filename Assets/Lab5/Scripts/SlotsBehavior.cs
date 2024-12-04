@@ -5,6 +5,7 @@ using UnityEngine;
 public class SlotsBehavior : MonoBehaviour
 {
     public List<GameObject> Slots = new List<GameObject>();
+    public GameObject detail;
 
     public void TurnOffSlot()
     {
@@ -20,5 +21,6 @@ public class SlotsBehavior : MonoBehaviour
             slot.GetComponent<BoxCollider>().enabled = true;
         }
     }
+   
 }
 
