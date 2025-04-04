@@ -17,7 +17,7 @@ public class Name : MonoBehaviour
     }
 
     public void EnterName(string letter)
-    {     
+    {   
         playerName = playerName + letter;
         text.text = playerName;
     }

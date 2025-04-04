@@ -20,6 +20,7 @@ public class Menu : MonoBehaviour
         check.SetAssemblyMode(true);
         startMenu.SetActive(false);
         pauseMenu.SetActive(true);
+        scoreKeeper.pause = false;
     }
 
     public void Disassembly()
@@ -28,6 +29,7 @@ public class Menu : MonoBehaviour
         check.SetAssemblyMode(false);
         startMenu.SetActive(false);
         pauseMenu.SetActive(true);
+        scoreKeeper.pause = false;
     }
 
     public void Pause()

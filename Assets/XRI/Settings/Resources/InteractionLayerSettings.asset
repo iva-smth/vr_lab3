@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
+  - Gaz
+  - Zatvor
+  - ZatvornayaRama
+  - Spring
   - Cover
-  - Gas_tube
   - Shompol
   - Magazine
-  - Spring
-  - Zatvor
-  - Zatvornaya_rama
   - AK
   - 
   - 
@@ -44,4 +44,4 @@ MonoBehaviour:
   - 
   - 
   - 
-  - Teleport
+  - 
